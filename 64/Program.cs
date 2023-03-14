@@ -20,12 +20,11 @@ bool NaturalNumber(int number)
 void ValuesFromNToOne(int number)
 {
     
-    if(number > 2)
+    if(number > 0)
     {
-        Console.Write(number - 1 + " ");
+        Console.Write(number + " ");
         ValuesFromNToOne(number - 1);
     } 
-    else Console.WriteLine($"В промежутке от 1 до {number} нет натуральных чисел");
 }
 
 int n = GetNumberFromUser("Введите число > ");
